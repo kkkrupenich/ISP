@@ -1,0 +1,16 @@
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.exe
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.deps.json
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.runtimeconfig.json
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.runtimeconfig.dev.json
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.dll
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\ref\text.dll
+D:\Project vscode sem2 C C#\c#\lab2\text\bin\Debug\net5.0\text.pdb
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.csprojAssemblyReference.cache
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.AssemblyInfoInputs.cache
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.AssemblyInfo.cs
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.csproj.CoreCompileInputs.cache
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.dll
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\ref\text.dll
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.pdb
+D:\Project vscode sem2 C C#\c#\lab2\text\obj\Debug\net5.0\text.genruntimeconfig.cache

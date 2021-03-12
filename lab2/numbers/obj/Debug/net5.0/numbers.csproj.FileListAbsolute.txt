@@ -1,0 +1,16 @@
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.exe
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.deps.json
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.runtimeconfig.json
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.runtimeconfig.dev.json
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.dll
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\ref\numbers.dll
+D:\Project vscode sem2 C C#\c#\lab2\numbers\bin\Debug\net5.0\numbers.pdb
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.csprojAssemblyReference.cache
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.AssemblyInfoInputs.cache
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.AssemblyInfo.cs
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.csproj.CoreCompileInputs.cache
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.dll
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\ref\numbers.dll
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.pdb
+D:\Project vscode sem2 C C#\c#\lab2\numbers\obj\Debug\net5.0\numbers.genruntimeconfig.cache
