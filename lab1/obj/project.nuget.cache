@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cZEqPcbKkBEo44/Ite1o4kpAe2KL/9QRLit6ViERtmSkzrqg6jb7pyxpOHSUVByotu2IfjiQhoOTlHke0vK6AA==",
+  "success": true,
+  "projectFilePath": "D:\\Project vscode sem2 C C#\\C#\\lab1\\lab1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\krupe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\krupe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}
