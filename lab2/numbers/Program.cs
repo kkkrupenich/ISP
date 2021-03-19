@@ -4,7 +4,7 @@ namespace numbers
 {
   class Program
   {
-    private static UInt64 CalculatePower(UInt64 a)
+    static UInt64 CalculatePower(UInt64 a)
     {
       UInt64 power = 0;
       while (a > 0)
@@ -15,7 +15,7 @@ namespace numbers
       return power;
     }
     
-    public static int Main(string[] args)
+    static int Main(string[] args)
     {
       UInt64 a = 0, b = 0;
       bool error = false;   
