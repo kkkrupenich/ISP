@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace Cars
 {
     class TransportFacility
     {
-        protected int Weight, MaxWeight;
+        protected int Weight;
         protected int PassengerSeats;
         protected int MaxSpeed;
         protected double MaxDistance;
@@ -20,18 +20,19 @@ namespace Cars
         protected double Fuel;
         protected int TankCapacity;
         protected double FuelFlow;
+        protected int HorsePower;
 
         protected int height, length, width;
 
         public Car() { }
-        public Car(int Weight, int MaxWeight, int PassengerSeats, int TankCapacity, double FuelFlow, int MaxSpeed)
+        public Car(int Weight, int PassengerSeats, int TankCapacity, double FuelFlow, int MaxSpeed, int HorsePower)
         {
             this.Weight = Weight;
-            this.MaxWeight = MaxWeight;
             this.PassengerSeats = PassengerSeats;
             this.TankCapacity = TankCapacity;
             this.FuelFlow = FuelFlow;
             this.MaxSpeed = MaxSpeed;
+            this.HorsePower = HorsePower;
 
             Fuel = 0;
             MaxDistance = TankCapacity * FuelFlow;
@@ -42,43 +43,51 @@ namespace Cars
             if (Fuel <= 0)
                 return;
 
-            if (this.Fuel + Fuel >= TankCapacity)
+            if(this.Fuel + Fuel > TankCapacity)
             {
-                this.Fuel = TankCapacity;
-                if (TankCapacity - this.Fuel - Fuel < 0)
-                    Console.WriteLine("Бак полон, остаток бензина : {0} л.", Fuel + this.Fuel - TankCapacity);
-                else
-                    Console.WriteLine("Бак полон");
-                this.Fuel = TankCapacity;
+                Console.WriteLine("Вы льете слишком много");
+                return;
             }
             else
             {
                 this.Fuel += Fuel;
-                Console.WriteLine("В баке {0} л. топлива", this.Fuel);
+                Console.WriteLine("В баке {0} л. топлива", this.Fuel);    
             }
         }
 
         public void Move(double distance)
         {
-            if(distance * FuelFlow > Fuel)
+            if(distance * FuelFlow / 100 > this.Fuel)
             {
                 Console.WriteLine("Недостаточно топлива");
                 return;
             }
-
-            Fuel -= distance * FuelFlow;
+            this.Fuel -= distance * FuelFlow / 100;
         }
 
-        public double CurrentFuelVolume() { return Fuel; }
+        public void Upgrade()
+        {
+            string tmp;
+            int money;
+            do
+            {
+                Console.WriteLine("Платите баксы : ");
+                tmp = Console.ReadLine();
+            } while (!int.TryParse(tmp, out money));
+            Random rand = new Random();
+            int newHP = rand.Next(0, money/100 + 1);
+            this.HorsePower += newHP;
+        }
 
         public void ShowInfo()
         {
-            Console.WriteLine("Объем бака : {0}\n" +
-                "Расход топлива : {1} л. на 100 км.\n" +
-                "Масса автомобиля : {2} т.\n" +
-                "Грузоподъемность : {3} кг.\n" +
+            Console.WriteLine("Объем бака : {0} л.\n" +
+                "Объем залитого топлива : {1} л.\n" +
+                "Расход топлива : {2} л. на 100 км.\n" +
+                "Масса автомобиля : {3} т.\n" +
                 "Максимальная скорость : {4} км/ч\n" +
-                "Кол-во пассажирских мест : {5}\n", TankCapacity, FuelFlow, Weight / 1000.0, MaxWeight - Weight, MaxSpeed, PassengerSeats);
+                "Кол-во пассажирских мест : {5}\n" +
+                "Кол-во лошадиных сил: {6}\n", TankCapacity, Fuel, FuelFlow, Weight / 1000.0, MaxSpeed, PassengerSeats, HorsePower);
         }
     }
     class Lamborgini : Car
@@ -115,25 +124,18 @@ namespace Cars
     {
         static void Main(string[] args)
         {
-            int Weight, MaxWeight;
+            int Weight;
             int PassengerSeats;
             int TankCapacity;
             double FuelFlow;
             int MaxSpeed;
+            int HorsePower;
             string tmp;
             do
             {
                 Console.WriteLine("Введите вес автомобиля : ");
                 tmp = Console.ReadLine();
             } while (!int.TryParse(tmp, out Weight));
-
-            do
-            {
-                Console.WriteLine("Введите грузоподъемность автомобиля : ");
-                tmp = Console.ReadLine();
-            } while (!int.TryParse(tmp, out MaxWeight));
-
-            MaxWeight += Weight;
 
             do
             {
@@ -159,18 +161,28 @@ namespace Cars
                 tmp = Console.ReadLine();
             } while (!int.TryParse(tmp, out MaxSpeed));
 
-            Car MyCar = new Car(Weight, MaxWeight, PassengerSeats, TankCapacity, FuelFlow, MaxSpeed);
+            do
+            {
+                Console.WriteLine("Введите кол-во лошадиных сил автомобиля : ");
+                tmp = Console.ReadLine();
+            } while (!int.TryParse(tmp, out HorsePower));
+
+            Car MyCar = new Car(Weight, PassengerSeats, TankCapacity, FuelFlow, MaxSpeed, HorsePower);
 
             int request = 1;
 
             while(request > 0)
             {
                 Console.WriteLine("1 - Информация про автомобиль\n" +
-                    "2 - Текущий запас топлива\n" +
-                    "3 - Переехать\n" +
-                    "4 - Заправить автомобиль\n");
-                tmp = Console.ReadLine();
-                int.TryParse(tmp, out request);
+                    "2 - Переехать\n" +
+                    "3 - Заправить автомобиль\n" +
+                    "4 - Увеличить мощность двигателя\n" +
+                    "0 - Выход");
+                do
+                {
+                    Console.Write("Ваш выбор : ");
+                    tmp = Console.ReadLine();
+                } while (!int.TryParse(tmp, out request) || (request < 0));
 
                 double x;
                 switch (request)
@@ -179,17 +191,18 @@ namespace Cars
                         MyCar.ShowInfo();
                         break;
                     case 2:
-                        Console.WriteLine(MyCar.CurrentFuelVolume());
-                        break;
-                    case 3:
                         tmp = Console.ReadLine();
                         double.TryParse(tmp, out x);
                         MyCar.Move(x);
                         break;
-                    case 4:
+                    case 3:
+                        Console.Write("Введите кол-во топлива : ");
                         tmp = Console.ReadLine();
                         double.TryParse(tmp, out x);
                         MyCar.FillUpTank(x);
+                        break;
+                    case 4:
+                        MyCar.Upgrade();
                         break;
                     default:
                         break;
