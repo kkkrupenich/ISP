@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Cars
 {
@@ -231,7 +231,7 @@ namespace Cars
         public Ferrari(string CarModel, int Weight, int PassengerSeats, int TankCapacity, double FuelFlow, int MaxSpeed, int HorsePower) :
             base(Weight, PassengerSeats, TankCapacity, FuelFlow, MaxSpeed, HorsePower)
         {
-            Brand = "McLaren";
+            Brand = "Ferrari";
             Model = CarModel;
         }
     }
