@@ -192,7 +192,7 @@ namespace lab1
                 }
                 else 
                 {
-                    break;
+                    break; 
                 }
             }
         }
