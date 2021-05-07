@@ -2,7 +2,7 @@ using System;
 
 namespace lab7
 {
-    class RationalNumber : IComparable<RationalNumber> 
+    class RationalNumber
     {
         public int Numerator { set; get; }
         public int Denominator { set; get; }
@@ -133,7 +133,5 @@ namespace lab7
         public static implicit operator float(RationalNumber n) => (float)n.Numerator / n.Denominator;
 
         public static implicit operator double(RationalNumber n) => (double)n.Numerator / n.Denominator;
-
-        public int CompareTo(RationalNumber other) => this == other ? 0 : (this > other ? 1 : -1);
     }
 }
