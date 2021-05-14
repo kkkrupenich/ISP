@@ -1,0 +1,16 @@
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.exe
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.deps.json
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.runtimeconfig.json
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.runtimeconfig.dev.json
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.dll
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\ref\lab7.dll
+D:\Project vscode sem2 C C#\C#\lab7\bin\Debug\net5.0\lab7.pdb
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.csprojAssemblyReference.cache
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.AssemblyInfoInputs.cache
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.AssemblyInfo.cs
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.csproj.CoreCompileInputs.cache
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.dll
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\ref\lab7.dll
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.pdb
+D:\Project vscode sem2 C C#\C#\lab7\obj\Debug\net5.0\lab7.genruntimeconfig.cache
